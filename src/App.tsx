@@ -1,12 +1,15 @@
 import ProductTable from "./components/ProductTable.tsx";
+import {Container, CssBaseline} from "@mui/material";
+import AAppBar from "./components/AAppBar.tsx";
 
 function App() {
 
     return (
-        <>
-            <h1>Hllo React</h1>
-            <ProductTable />
-        </>
+        <Container maxWidth={"xl"}>
+            <CssBaseline/>
+            <AAppBar />
+            <ProductTable/>
+        </Container>
     )
 }
 
