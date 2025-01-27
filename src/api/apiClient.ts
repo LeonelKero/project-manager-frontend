@@ -11,9 +11,9 @@ const apiClient = (params?: any) => axios.create({
 //     return apiClient().get<Product[]>("").then(response => response.data);
 // }
 
-export const deleteProduct = async (uri: string) => {
-    return await apiClient().delete(uri)
-}
+// export const deleteProduct = async (uri: string) => {
+//     return await apiClient().delete(uri)
+// }
 
 export const addProduct = async (preduct: ProductRequest): Promise<Product> => {
     return apiClient().post("", preduct, {
